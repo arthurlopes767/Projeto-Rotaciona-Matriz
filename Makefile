@@ -17,10 +17,10 @@ geraMatriz: geraMatriz.c
 # Gera a matriz e roda os 4 experimentos exigidos
 experimentos: all
 	./geraMatriz 1000 matriz1000.dat
-	@echo "=== T=1 ===" && ./rotacionaMat 1000 1 matriz1000.dat matriz1000_t1.rot
-	@echo "=== T=2 ===" && ./rotacionaMat 1000 2 matriz1000.dat matriz1000_t2.rot
-	@echo "=== T=4 ===" && ./rotacionaMat 1000 4 matriz1000.dat matriz1000_t4.rot
-	@echo "=== T=8 ===" && ./rotacionaMat 1000 8 matriz1000.dat matriz1000_t8.rot
+	@echo "=== T=1 ===" && ./rotacionaMat 1000 1 matriz1000.dat matriz1000.rot
+	@echo "=== T=2 ===" && ./rotacionaMat 1000 2 matriz1000.dat matriz1000.rot
+	@echo "=== T=4 ===" && ./rotacionaMat 1000 4 matriz1000.dat matriz1000.rot
+	@echo "=== T=8 ===" && ./rotacionaMat 1000 8 matriz1000.dat matriz1000.rot
 
 clean:
 	rm -f rotacionaMat geraMatriz *.dat *.rot *.o
