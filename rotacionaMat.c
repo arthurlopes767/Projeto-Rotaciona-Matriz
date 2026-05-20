@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <pthread.h>
 #include <time.h>
-#include <string.h>
 
 #define ELEM(mat, i, j, cols) ((mat)[(i) * (cols) + (j)])
 
